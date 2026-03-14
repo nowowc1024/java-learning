@@ -6,14 +6,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter your name: ");
+        // Ask for name
+        System.out.print("What is your name? ");
         String name = scanner.nextLine();
 
-        System.out.println("Hello, " + name + "! Welcome to Maven!");
+        // Personalised greeting
+        System.out.println("Hello, " + name + "! Nice to meet you.");
 
         // Loop until user types "exit"
         while (true) {
-            System.out.print("Type a message (or 'exit' to quit): ");
+            System.out.print("Enter a message (or type 'exit' to quit): ");
             String input = scanner.nextLine();
 
             if (input.equals("exit")) {
